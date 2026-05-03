@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="it">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida pokemon rosso fuoco</title>
+	<link href="capipalestra.css" rel="stylesheet" >
+ </head>
+ <body>
+	
+	<div style="text-align: center; margin: 20px;">
+    <input type="text" id="pokemonSearch" placeholder="Cerca un Capopalestra, un Pokémon o una mossa..." 
+           onkeyup="searchGyms()" 
+           style="padding: 12px; width: 80%; max-width: 600px; border-radius: 25px; border: 2px solid #ff4444; outline: none; font-size: 16px;">
+</div>
+	<div id="benvenuti">
+    <h1 style = "color:red"> GUIDA POKEMON ROSSO FUOCO</h1>
+	<h1>Benvenuti sul sito guida di Davide Boscolo Cegion</h1>
+	</div>
+	
+	<div class="nav-container">
+    <button onclick="filtra('all')" style="background-color: #007fff; color: white;">Mostra Tutto</button>
+    <button onclick="filtra('Brock')" style="background-color: #8B4513; color: white;">Brock</button>
+    <button onclick="filtra('misty')" style="background-color: #1E90FF; color: white;">Misty</button>
+    <button onclick="filtra('lt')" style="background-color: #FFD700; color: black;">LT. Surge</button>
+    <button onclick="filtra('erika')" style="background-color: #32CD32; color: white;">Erika</button>
+    <button onclick="filtra('koga')" style="background-color: #A020F0; color: white;">Koga</button>
+    <button onclick="filtra('Sabrina')" style="background-color: #FF69B4; color: white;">Sabrina</button>
+    <button onclick="filtra('Blaine')" style="background-color: #FF4500; color: white;">Blaine</button>
+    <button onclick="filtra('Giov')" style="background-color: #4B3621; color: white;">Giovanni</button>
+	</div>
+	
+	<div id="benvenuti">
+	<h4><b>Questo sito è stato creato per dare soluzioni e informazioni su i capipalestra di Kanto, di specifico, di Rosso Fuoco.<br> L'idea mi è venuta perchè ho voluto giocare alla prima generazione sul mio telefono (emulatore) e mi piace creare siti. </h4> 
+	</div>
+	
+	<div id="benvenuti">
+	<div id="Brock" class="gym-card">
+	<div class="gym-info">
+	<h2 style = "color:rgb(5, 5, 216)">Come battere: Brock</h2>
+	<h3>LA SQUADRA</h3>
+	<h5>Se la squadra di Brock è:</h5> 
+	<div class="gym-image">
+	<img src="brock.jpg"/>
+	</div>
+	<h4 style="color:orange">GEODUDE: Livello 12.<br>Mosse: Azione (Tackle) <br> Rafforzatore (Defense Curl).</h4> 
+	<h4 style="color:violet">ONIX: Livello 14.<br>Mosse: Azione (Tackle), Legatutto (Bind), Rafforzatore (Harden) <br> Rocciotomba (Rock Tomb).  </h4>  
+	<h3>LA SQUADRA PER SCONFIGGERLO </h3>
+	<h3 style="color:green;">La palestra più semplice delle altre, con soluzioni:</h3> 
+	<div class="pkmn-team">
+	<img src="bs.jpg"/>
+	<img src="mankey.jpg"/>
+	</div>
+	<h2  style="color:green;">Per chi ha scelto Bulbasaur o Squirtle ha la vittoria in tasca.</h2> 
+	<h2  style="color:#FF8C00;">Sennò utilizzate un Mankey</h2>
+	</div>
+	</div>
+	
+	<div id="misty" class="gym-card">
+	<div class="gym-info">
+    <h2 style = "color:rgb(5, 5, 216)">Come battere: Misty</h2>
+	<h3>LA SQUADRA</h3>
+	<h5>Se la squadra di Misty è:</h5> 
+	<div class="gym-image">
+	<img src="misty.jpg"/>
+	</div>
+	<h4 style="color:orange">STARYU (Livello 18) <br>  Tipo: Acqua  <br>    Mosse: Azione, Rafforzatore, Ripresa, Pistolacqua.</h4> 
+	<h4 style="color:violet"> STARMIE (Livello: 21) <br>Tipo: Acqua/Psico <br>Mosse principali: Azione, Pistolacqua, Rapigiro, Idropulsar.</h4> 
+	<h3>LA SQUADRA PER SCONFIGGERLA </h3>
+	<h3  style="color: #FFD700;">Alcune persone pensano che sia impossibile o che bisognia utilizzare un pokemon leggendario ma la soluzione è semplice, cioè</h3> 
+	<div class="pkmn-team">
+	<img src="pika.jpg"/>
+	</div>
+	<h2 style="color: #FFD700;">un pikachu che si cattura nel bosco Smeraldo<br>più essattamente al livello 15</h2> 
+	</div>
+	</div>
+	
+	<div id="lt" class="gym-card">
+	<div class="gym-info">
+	<h2 style = "color:blue">Come battere: LT. Surge</h2>
+	<h5>Se la squadra di Surge è:</h5> 
+	<div class="gym-image">
+	<img src="surge.jpg"/>
+	</div>
+	<h4 style="color:orange"> VOLTORB (Livello 21)<br>Mosse: Azione, Stridio, Sonicboom, Ondashock.<br>Abilità: Antisuono;<br>PIKACHU (Livello 18)<br>Mosse: Ondashock, Tuononda, Doppioteam, Attacco Rapido.<br>Abilità: Statico..</h4> 
+	<h4 style="color:violet">RAICHU (Livello 24)<br>Mosse: Ondashock, Attacco Rapido, Tuononda, Doppioteam.<br>Abilità: Statico.</h4> 
+	<h3>LA SQUADRA PER SCONFIGGERLO </h3>
+	<h3 style="color:brown">Tutti sanno delle potenzialità dei pokemon di Surge ma tutti ricordano dell' unica sua debolezza...</h3> 
+	<div class="pkmn-team">
+	<img src="diglet.jpg"/>
+	</div>
+	<h2 style="color:brown">Il tipo TERRA. Il più utilizzato in questa palestra è DIGLETT.<br>Consigliato al livello minimo 20.</h2> 
+	</div>
+	</div>
+	
+	<div id="erika" class="gym-card">
+	<div class="gym-info">
+	<h2 style = "color:blue">Come battere: Erika</h2>
+	<h5>Se la squadra di Erica è:</h5> 
+	<div class="gym-image">
+	<img src="erika.jpg"/>
+	</div>
+	<h4 style="color:orange">VICTREEBEL (Lv. 29)<br> Spora, Acido, Velenopolvere, Gigassorbimento;<br>TAGELA (Lv. 24)<br> Velenopolvere, Costrizione, Radicamento, Gigassorbimento.</h4> 
+	<h4 style="color:violet">VILEPLUME (Lv. 29): Sonnifero, Acido, Spora, Gigassorbimento. </h4> 
+	<h3>LA SQUADRA PER SCONFIGGERLA </h3>
+	<h3 style="color:red">La sua squadra è facile da battere (amenochè non ti addormenti con sonnifero e resti ogni volta addormentato per 3 turni!)</h3>
+	<div class="pkmn-team">
+	<img src="ca.jpg"/>
+	</div>
+	<h2 style="color:red">Se si ha charmeleon-charizard come starter è una buona opzione.<br>Altrimenti utilizzate un growlithe che potete far evolvere con una pietra focaia.</h2>
+	</div>
+	</div>
+	
+	<div id="koga" class="gym-card">
+	<div class="gym-info">
+	<h2 style = "color:blue">Come battere: koga</h2>
+	<h5>Se la squadra di Koga è:</h5> 
+	<div class="gym-image">
+	<img src="koga.jpg"/>
+	</div>
+	<h4 style="color:orange">KOFFING (Liv. 37)<br>Abilità: Levitazione<br>Mosse: Fango, Muro di Fumo, Tossina, Autodistruzione;<br>MUK (Liv. 39):<br> Abilità: Fogliame (Sticky Hold)<br>Mosse: Minimizzato, Fango, Scudo Acido, Tossina<br>KOFFING (Liv. 37)<br>Abilità: Levitazione<br>Mosse: Autodistruzione, Fango, Muro di Fumo, Tossina. </h4> 
+	<h4 style="color:violet">WEEZING (Liv. 43)<br>Abilità: Levitazione<br>Mosse: Azione, Fango, Muro di Fumo, Tossina. </h4> 
+	<h3>LA SQUADRA PER SCONFIGGERLO </h3>
+	<h3 style="color:purple">in questo gioco esitono i tipi acciaio(difensivi) ma anche i tipi psico(offensivi).La scelta offensiva però è esposta a rischi, come l' AVVELENAENTO</h3>
+	<div class="pkmn-team">
+	<img src="magneton.jpg"/>
+	<img src="mime.jpg"/>
+	</div>
+	<h2 style="color:purple">Si può utilizzare Magneton(difensivo) oppure Mr. Mime(offensivo).</h2>
+	</div>
+	</div>
+	
+	<div id="Sabrina" class="gym-card">
+	<div class="gym-info">
+	<h2 style = "color:blue">Come battere: Sabrina</h2>
+	<h5>Se la squadra di Sabrina è:</h5> 
+	<div class="gym-image">
+	<img src="sabrina.jpg"/>
+	</div>
+	<h4 style="color:orange">KADABRA (Liv. 38)<br>Abilità: Sincronismo<br>Mosse: Riflesso, Psico, Inibitore, Divinazione;<br>MR.MIME (Liv. 37)<br>Abilità: Antisuono<br>Mosse: Barriera, Psico, Sostituto, Calciomente;<br>VENOMOTH (Liv. 38)<br>Abilità: Polvoscudo<br>Mosse: Paralizzante, Psico, Azione, Supersuono. </h4> 
+	<h4 style="color:violet">ALAKAZAM (Liv. 43)<br>Abilità: Sincronismo<br>Mosse: Psico, Divinazione, Calmamente, Ripresa.</h4> 
+	<h3>LA SQUADRA PER SCONFIGGERLA </h3>
+	<h3 style="color:gray">Come abbiamo visto, i tipi psico sono offensivi ma fragili sul lato difensivo </h3> 
+	<div class="pkmn-team">
+	<img src="snorlax.jpg"/>
+	</div>
+	<h2 style="color:gray">Un buon pokemon è SNORLAX per la sua alta difesa speciale e un buon attacco allo stesso momento.</h2> 
+	</div>	
+	</div>
+	
+	<div id="Blaine" class="gym-card">
+	<div class="gym-info">
+	<h2 style = "color:blue">Come battere: Blaine</h2>
+	<h5>Se la squadra di Blaine è:</h5> 
+	<div class="gym-image">
+	<img src="blaine.jpg"/>
+	</div>
+	<h4 style="color:orange">GROWLITHE (Livello 42)<br>Abilità: Prepotenza.<br>Mosse: Braciere, Morso, Nitrocarica, Lanciafiamme;<br>PONYTA (Livello 40)<br>Abilità:Fugafacile.<br>Mosse: Braciere, Nitrocarica, Lanciafiamme, Fuocobomba;<br>RAPIDASH (Livello 42)<br>Abilità: Fugafacile.<br>Mosse: Braciere, Nitrocarica, Lanciafiamme, Fuocobomba. </h4> 
+	<h4 style="color:violet">ARCANINE (Livello 47)<br>Abilità: Prepotenza.<br>Mosse: Morso, Ruggito, Lanciafiamme, Fuocobomba. </h4> 
+	<h3>LA SQUADRA PER SCONFIGGERLO </h3>
+	<h3 style="color:#87CEEB"> Per affrontarlo serve il tipo acqua o roccia perchè sono suprefficaci e allo stesso momento resistenti al fuoco. </h3> 
+	<div class="pkmn-team">
+	<img src="blastoise.jpg"/>
+	<img src="rhydon.jpg"/>
+	</div>
+	<h2 style="color:#87CEEB">Un buon pokemon è acqua e resistente è sicuramente Blastoise.<br></h2> 
+	<h2 style="color:#87CEEB">Se invece vuoi utilizzare altro c'è Rhydon.</h2> 
+	</div>	
+	</div>
+	
+	<div id="Giov" class="gym-card">
+	<div class="gym-info">
+	<h2 style = "color:blue">Come battere: Giovanni</h2>
+	<h5>Se la squadra di Giovanni è:</h5> 
+	<div class="gym-image">
+	<img src="giovanni.jpg"/>
+	</div>
+	<h4 style="color:orange">RHYDON(Livello 45)<br>Mosse: Furia, Colpo, Incornata, Visotruce<br>abilità:Parafulmine;<br>DUGTRIO (Livello 42)<br>Mosse: Fango, Magnitudo, Fangosberla, Visotruce.<br>Abilità: Sabbiavelo o Trappola Arena;<br>NIDOQUEEN (Livello 44)<br>Mosse: Body Slam, Doppiosberla, Velenospina, Terremoto.<br>Abilità: Velenopunto.Nidoking;<br> NIDOKING(Livello 45)<br>Mosse: Colpo, Doppiosberla, Incornata, Terremoto.<br>Abilità: Velenopunto. </h4> 
+	<h4 style="color:violet"> RHYDON (Livello 50)<br> Mosse: Terremoto, Frana, Perforcorno, Visotruce<br> abilità:Parafulmine:</h4> 
+	<h3>LA SQUADRA PER SCONFIGGERLO </h3>
+	<h3 style="color:#38daae"> Per affrontarlo servono i tipi efficaci su i suoi pokemon </h3> 
+	<div class="pkmn-team">
+	<img src="lapras.jpg"/>
+	<img src="venasaur.jpg"/>
+	</div>
+	<h2 style="color:#38daae">Un buon pokemon è acqua/ghiaccio è Lapras <br></h2> 
+	<h2 style="color:#38daae">Se invece vuoi utilizzare altro c'è il pokemon erba/veleno Venasaur</h2> 
+	</div>
+	</div>
+	</div>
+	
+	
+	<table style="width:90%; max-width: 900px; margin: 40px auto; border-collapse: collapse; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); font-family: humanist;">
+    <thead>
+        <tr style="background-color: #ff4444; color: white;">
+            <th style="padding: 30px; border: 1px solid #ddd;">Capopalestra</th>
+            <th style="padding: 12px; border: 1px solid #ddd;">Tipo Principale</th>
+            <th style="padding: 12px; border: 1px solid #ddd;">Livello Max</th>
+        </tr>
+    </thead>
+	
+    <tbody>
+        <tr><td style="padding: 10px; border: 1px solid #ddd;"><b>Brock</b></td><td style="padding: 10px; border: 1px solid #ddd;">Roccia</td><td style="padding: 10px; border: 1px solid #ddd;">14</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid #ddd;"><b>Misty</b></td><td style="padding: 10px; border: 1px solid #ddd;">Acqua</td><td style="padding: 10px; border: 1px solid #ddd;">21</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid #ddd;"><b>LT. Surge</b></td><td style="padding: 10px; border: 1px solid #ddd;">Elettro</td><td style="padding: 10px; border: 1px solid #ddd;">24</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid #ddd;"><b>Erika</b></td><td style="padding: 10px; border: 1px solid #ddd;">Erba</td><td style="padding: 10px; border: 1px solid #ddd;">29</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid #ddd;"><b>Koga</b></td><td style="padding: 10px; border: 1px solid #ddd;">Veleno</td><td style="padding: 10px; border: 1px solid #ddd;">43</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid #ddd;"><b>Sabrina</b></td><td style="padding: 10px; border: 1px solid #ddd;">Psico</td><td style="padding: 10px; border: 1px solid #ddd;">43</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid #ddd;"><b>Blaine</b></td><td style="padding: 10px; border: 1px solid #ddd;">Fuoco</td><td style="padding: 100px; border: 1px solid #ddd;">47</td></tr>
+        <tr><td style="padding: 10px; border: 1px solid #ddd;"><b>Giovanni</b></td><td style="padding: 10px; border: 1px solid #ddd;">Terra</td><td style="padding: 100px; border: 1px solid #ddd;">45</td></tr>
+    </tbody>
+</table>
+	
+	<p style="display: inline-block; padding: 5px 10px; background: #eee; border-radius: 20px; font-size: 11px;">
+   ✨ Immagini generate con IA
+</p>
+	<hr>
+<div id="review-section" style="padding: 20px; background-color: #f9f9f9; border-radius: 10px; margin: 20px;">
+    <h2>Lascia una recensione</h2>
+    
+    <div id="star-rating" style="font-size: 25px; cursor: pointer; color: #ccc; margin-bottom: 10px;">
+        <span data-value="1">★</span><span data-value="2">★</span><span data-value="3">★</span><span data-value="4">★</span><span data-value="5">★</span>
+    </div>
+
+    <textarea id="review-text" placeholder="Cosa ne pensi della guida?" style="width: 100%; height: 80px; margin-bottom: 10px;"></textarea><br>
+    
+    <button id="submit-review" style="padding: 10px 20px; background-color: #28a745; color: white; border: none; cursor: pointer; border-radius: 5px;">Invia Recensione</button>
+
+	<div id="rating-summary" style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 20px; border: 1px solid #ddd; display: flex; align-items: center; gap: 20px;">
+    <div style="text-align: center;">
+        <h1 id="average-value" style="margin: 0; color: #ffcc00; font-size: 48px;">0.0</h1>
+        <div id="average-stars" style="color: #ffcc00; font-size: 20px;">☆☆☆☆☆</div>
+    </div>
+    <div>
+        <p id="total-reviews-count" style="margin: 0; color: #666;">0 recensioni totali</p>
+    </div>
+</div>
+
+    <h3>Recensioni degli utenti:</h3>
+    <div id="reviews-list">
+        </div>
+</div>
+
+<style>
+    #star-rating span.active { color: #ffcc00; }
+    .review-item { background: white; padding: 10px; border: 1px solid #ddd; margin-bottom: 10px; border-radius: 5px; }
+</style>
+ <script>
+
+
+  // Variabili Globali
+  let selectedRating = 0;
+
+	function filtra(idCapo) {
+    // 1. Puliamo la barra di ricerca quando si usa un bottone
+    document.getElementById('pokemonSearch').value = "";
+    
+    // 2. Lista corretta degli ID che hai nel  HTML
+    const sezioni = ['Brock', 'misty', 'lt', 'erika', 'koga', 'Sabrina', 'Blaine', 'Giov'];
+    
+    sezioni.forEach(sectionId => {
+        const elemento = document.getElementById(sectionId);
+        if (elemento) {
+            // Mostra se è 'all' o se l'ID coincide esattamente
+            if (idCapo === 'all' || sectionId === idCapo) {
+                elemento.style.display = "flex"; 
+            } else {
+                elemento.style.display = "none";
+            }
+        }
+    });
+}
+
+function searchGyms() {
+    let input = document.getElementById('pokemonSearch').value.toLowerCase();
+    let cards = document.getElementsByClassName('gym-card');
+    
+    for (let i = 0; i < cards.length; i++) {
+        let cardText = cards[i].innerText.toLowerCase();
+        // La ricerca mostra le card solo se contengono il testo
+        if (cardText.includes(input)) {
+            cards[i].style.display = "flex";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}
+  
+
+  // 2. Funzione STELLE (Aggiorna il colore)
+  function updateStars(rating) {
+    const stars = document.querySelectorAll('#star-rating span');
+    stars.forEach(star => {
+      star.classList.toggle('active', star.getAttribute('data-value') <= rating);
+    });
+  }
+
+  // 3. Funzione RECENSIONI (Aggiunge al grafico)
+  function addReviewToDOM(voto, testo, index) {
+    const reviewList = document.getElementById('reviews-list');
+    const newReview = document.createElement('div');
+    newReview.className = 'review-item';
+    let starsHtml = '';
+    for (let i = 1; i <= 5; i++) { starsHtml += i <= voto ? '★' : '☆'; }
+    newReview.innerHTML = `
+        <button class="delete-btn" onclick="deleteReview(${index})">✕</button>
+        <div class="review-stars">${starsHtml}</div>
+        <p>${testo}</p>
+        <small style="color: #bbb; font-size: 10px;">Inviata da te</small>
+    `;
+    reviewList.appendChild(newReview);
+  }
+  
+	function calcolaMedia() {
+    const savedReviews = JSON.parse(localStorage.getItem('myPokemonReviews')) || [];
+    const totalCount = savedReviews.length;
+    const averageValueDisplay = document.getElementById('average-value');
+    const averageStarsDisplay = document.getElementById('average-stars');
+    const countDisplay = document.getElementById('total-reviews-count');
+
+    if (totalCount === 0) {
+        averageValueDisplay.innerText = "0.0";
+        averageStarsDisplay.innerText = "☆☆☆☆☆";
+        countDisplay.innerText = "Nessuna recensione";
+        return;
+    }
+
+    // Somma tutti i voti
+    const somma = savedReviews.reduce((acc, rev) => acc + parseInt(rev.voto), 0);
+    const media = (somma / totalCount).toFixed(1); // Arrotonda a un decimale
+
+    // Aggiorna i testi
+    averageValueDisplay.innerText = media;
+    countDisplay.innerText = totalCount + (totalCount === 1 ? " recensione" : " recensioni totali");
+
+    // Aggiorna le stelle visive (piene vs vuote)
+    let starsHtml = '';
+    for (let i = 1; i <= 5; i++) {
+        starsHtml += i <= Math.round(media) ? '★' : '☆';
+    }
+    averageStarsDisplay.innerText = starsHtml;
+}
+
+  // 4. Funzione ELIMINA (Aggiungila se mancava)
+  function deleteReview(index) {
+    if(confirm("Vuoi eliminare questa recensione?")) {
+      let savedReviews = JSON.parse(localStorage.getItem('myPokemonReviews')) || [];
+      savedReviews.splice(index, 1);
+      localStorage.setItem('myPokemonReviews', JSON.stringify(savedReviews));
+      location.reload();
+    }
+  }
+
+  // Inizializzazione al caricamento
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // 1. Carica le recensioni esistenti
+    const savedReviews = JSON.parse(localStorage.getItem('myPokemonReviews')) || [];
+    savedReviews.forEach((rev, i) => addReviewToDOM(rev.voto, rev.testo, i));
+
+    // 2. Calcola la media iniziale
+    calcolaMedia();
+
+    // 3. Eventi per cliccare le stelle della nuova recensione
+    const stars = document.querySelectorAll('#star-rating span');
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+        selectedRating = star.getAttribute('data-value');
+        updateStars(selectedRating);
+      });
+    });
+
+    // 4. Invio della recensione
+    document.getElementById('submit-review').addEventListener('click', () => {
+      const text = document.getElementById('review-text').value;
+
+      if (selectedRating === 0 || text === "") {
+          return alert("Seleziona le stelle e scrivi un commento!");
+      }
+
+      const savedReviews = JSON.parse(localStorage.getItem('myPokemonReviews')) || [];
+      savedReviews.push({ voto: selectedRating, testo: text });
+      localStorage.setItem('myPokemonReviews', JSON.stringify(savedReviews));
+      
+      location.reload();
+    });
+  }); // Fine corretta
+</script>
+
+	<h4><b>Spero che vi sia piaciuto il sito.<br>Creare il sito per me è stato bello per cui penso di fare il continuo, come una collana, con prossimo "capitolo" i super4 di pokemon Rosso Fuoco.</b></h4>
+	<footer style="margin-top: 50px; font-size: 12px; color: gray; text-align: center;">
+    <p>© 2026 Creato da Davide Boscolo Cegion. Questo sito è un progetto amatoriale a scopo illustrativo.</p>
+	<p>Le immagini sono state create con l'intelligenza artificiale.</p>
+    <p>Pokémon e i relativi nomi sono marchi registrati di Nintendo, Creatures Inc. e Game Freak. 
+</footer>
+ </body>
+</html>

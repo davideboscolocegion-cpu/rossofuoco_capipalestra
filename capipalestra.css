@@ -1,0 +1,233 @@
+body {
+	background-color:white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; /* Un grigio chiarissimo invece del bianco puro */
+    color: #333;
+    line-height: 1.6;
+	font-family: humanist;
+       }
+	   
+	  #benvenuti {
+		  text-align: center;
+	  }
+	  
+	  
+.gym-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border: 2px solid #eee;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.gym-info { flex: 1; min-width: 300px; }
+
+.gym-image img {
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Rende le immagini dei tuoi pokemon più ordinate */
+.pkmn-team img {
+    width: 120px !important;
+    border: 2px solid #eee;
+    border-radius: 50%;
+    margin: 5px;
+}
+.gym-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border: none; /* Rimuoviamo il bordo semplice */
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Ombra leggera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gym-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+}
+	
+.nav-container {
+   position: center;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 12px 20px;
+	padding-left:500px;;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+	
+
+.nav-container button {
+   transform: scale(0.95);
+
+}
+
+.nav-container button:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+/* Contenitore generale delle recensioni */
+#reviews-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Stile della singola Card recensione */
+.review-item {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.review-item:hover {
+    transform: translateY(-5px);
+    border-color: #007fff;
+}
+
+/* Stile delle stelle dentro la recensione */
+.review-stars {
+    color: #ffcc00;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Testo della recensione */
+.review-item p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+/* Tasto elimina elegante */
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ffebee;
+    color: #ff5252;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-btn:hover {
+    background: #ff5252;
+    color: white;
+}
+table {
+    border-radius: 15px;
+    overflow: hidden; /* Importante per vedere gli angoli arrotondati */
+    border: none;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Righe grigie alternate */
+}
+
+tbody tr:hover {
+    background-color: #ffe5e5; /* Feedback quando passi il mouse sulla tabella */
+}
+#pokemonSearch {
+    padding: 15px 25px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 50px;
+   border: 2px solid #ddd;
+    transition: width 0.4s ease-in-out, border-color 0.3s;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+#pokemonSearch:focus {
+   width: 90%; /* Si allarga leggermente quando ci clicchi sopra */
+    border-color: #ff4444;
+    background-color: #fffafa;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gym-card {
+    animation: fadeInUp 0.5s ease backwards;
+}
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0;
+    color: #ccc;
+}
+
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid #eee;
+}
+
+.separator:not(:empty)::before { margin-right: .25em; }
+.separator:not(:empty)::after { margin-left: .25em; }
+
+.pokeball-icon {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+}
+table {
+    border-radius: 20px;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+th {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+td {
+    padding: 15px !important;
+    border-bottom: 1px solid #f0f0f0 !important;
+    border-right: none !important;
+}
+
+tr:last-child td {
+    border-bottom: none !important;
+}
